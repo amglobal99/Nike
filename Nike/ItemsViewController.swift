@@ -30,6 +30,9 @@ class ItemsViewController: UICollectionViewController, NikePhotoCollectionViewCe
     
     
     
+    
+    
+    
     override func viewDidLoad() {
         print("tets")
         
@@ -55,6 +58,7 @@ class ItemsViewController: UICollectionViewController, NikePhotoCollectionViewCe
                     
                     
                     
+                    
                 } else {
                     print("Could not get json from file, make sure that file contains valid json.")
                 }
@@ -70,6 +74,28 @@ class ItemsViewController: UICollectionViewController, NikePhotoCollectionViewCe
         
         
     } // end method
+    
+    
+    
+    
+    /*
+    
+    func photosFromJsonObject(json:JSON) -> [NikePhoto]? {
+        
+        var photos:[NikePhoto]?
+        
+        let photo =
+        
+        
+        
+        return photos
+        
+    }
+    
+    */
+    
+    
+    
     
     
     
@@ -117,6 +143,14 @@ class ItemsViewController: UICollectionViewController, NikePhotoCollectionViewCe
         
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath) as! NikePhotoCollectionViewCell
+        
+        
+        cell.nameLabel.text = "Jack NAme"
+        cell.priceLabel.text = "4.99"
+        cell.colorLabel.text = "939"
+        
+        
+        
         
         /*
          let photo = photoForItemAtIndexPath(indexPath: indexPath)

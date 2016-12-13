@@ -10,7 +10,7 @@
         <!--Items View Controller-->
         <scene sceneID="4xt-tj-2ZH">
             <objects>
-                <collectionViewController id="9fi-RI-gnf" customClass="ItemsViewController" customModule="Nike" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="NikePhotos" id="9fi-RI-gnf" customClass="ItemsViewController" customModule="Nike" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="5CD-YY-9o2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                             <inset key="sectionInset" minX="10" minY="20" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jhW-6G-jo5">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NikePhotoCollectionViewCell" id="jhW-6G-jo5" customClass="NikePhotoCollectionViewCell" customModule="Nike" customModuleProvider="target">
                                 <rect key="frame" x="68" y="20" width="250" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -76,6 +76,11 @@
                                     <constraint firstItem="0o0-zM-Agj" firstAttribute="leading" secondItem="fQi-eu-bwV" secondAttribute="trailing" constant="-127" id="ygM-25-1AG"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="colorLabel" destination="Q0C-M2-OMT" id="yYo-7f-jmz"/>
+                                    <outlet property="imageView" destination="fQi-eu-bwV" id="I7K-hO-muq"/>
+                                    <outlet property="nameLabel" destination="FgW-sz-Msz" id="g8U-JQ-8nC"/>
+                                    <outlet property="priceLabel" destination="bgm-R7-n4u" id="rqF-ez-v4Z"/>
+                                    <outlet property="spinner" destination="0o0-zM-Agj" id="TxY-Rv-3vV"/>
                                     <segue destination="7Um-lG-AWR" kind="show" identifier="ShowNikePhotoDetailView" id="ll0-PA-GC9"/>
                                 </connections>
                             </collectionViewCell>
