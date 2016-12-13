@@ -75,6 +75,13 @@ class NikePhotoCollectionViewDataSource: NSObject, UICollectionViewDataSource, U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath) as! NikePhotoCollectionViewCell
+        
+        
+        //MARK: TODO  Update cell labels and Image here
+        
+        
+        
+        
         return cell
     } //end method
     

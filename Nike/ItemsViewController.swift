@@ -86,22 +86,28 @@ class ItemsViewController: UICollectionViewController, NikePhotoCollectionViewCe
                     
                     // Get the Product details from the JSON object
                     let prodObj = jsonObj["results"][0]["products"]
-                    print(prodObj)
+                    
                     
                     
                     // MARK: - TODO  Complete code to retrieve Photo details and Image
                     /**
                         Due to time constrains, leaving this as a TODO
                         Functions to be used here are in place.
+                     
+                        Logic is as follows:
+                        - First, retrieve array of Photos to b eprocessed
+                        - CollectionView Delegate method with then search for Photo at that Index
+                        - Retrieve UIImage using URL path 
+                        - Populate values in CollectionView cell
+                        - Stop Spinner and replace cell with Phtoto image
+                     
+                     
  
                         */
                     
                     
                     // Get list of Photos(returns array of 'NikePhoto' items)
                     //let itemsResult   = photosFromJsonObject(prodObj)
-                    
-
-                    
                     
                     
                     

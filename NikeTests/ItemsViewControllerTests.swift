@@ -22,7 +22,7 @@ import SwiftyJSON
 
 
 
-class ItemsViewControllerTests: BaseTestCase {
+class ItemsViewControllerTests: XCTestCase {
     
     
     var itemsVC: ItemsViewController!
