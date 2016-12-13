@@ -23,34 +23,7 @@ protocol Utils {}   // This protocol contains common utility functions
 
 extension Utils {
     
-    
-    
-    
-    // This is a simple test method
-    func climb() -> Void {
-        print("I am climbing .....")
-    }
-    
-    
-    
-    
-    
-    /*
-    
-    //MARK: - Banner Related
-    
-    func showBanner(title:String, subtitle:String, image: UIImage?, bkColor: UIColor) {
-        let banner: Banner? = Banner(title: title, subtitle: subtitle, image: image, backgroundColor: bkColor)
-        banner?.dismissesOnSwipe = true
-        banner?.show(duration: nil)
-    }
-    
-    
-    */
-    
-    
-    
-    
+
     
     
     // MARK:  URL Related

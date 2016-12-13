@@ -22,6 +22,10 @@
 		0F605A7B1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */; };
 		0F605A7D1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */; };
 		0F605A7E1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */; };
+		0F605A811DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A801DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift */; };
+		0F605A821DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A801DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift */; };
+		0F605A841DFF8CF000A99223 /* NikePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A831DFF8CF000A99223 /* NikePhoto.swift */; };
+		0F605A851DFF8CF000A99223 /* NikePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A831DFF8CF000A99223 /* NikePhoto.swift */; };
 		9528C52D844F287A5976F72E /* Pods_Nike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EB66B6ED3B664F5224216F /* Pods_Nike.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,8 @@
 		0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolJsonConvertible.swift; sourceTree = "<group>"; };
 		0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolUtils.swift; sourceTree = "<group>"; };
+		0F605A801DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NIkePhotoCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		0F605A831DFF8CF000A99223 /* NikePhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikePhoto.swift; sourceTree = "<group>"; };
 		14EB66B6ED3B664F5224216F /* Pods_Nike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEC36A43BCBD8C98CC85D1 /* Pods-Nike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nike.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nike/Pods-Nike.release.xcconfig"; sourceTree = "<group>"; };
 		9598F73264746090A09FE7FD /* Pods-Nike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nike/Pods-Nike.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,12 +103,16 @@
 		0F605A4B1DFF7FF800A99223 /* Nike */ = {
 			isa = PBXGroup;
 			children = (
-				0F605A751DFF814900A99223 /* Resources */,
-				0F605A701DFF80F700A99223 /* Delegates */,
-				0F605A6F1DFF80E300A99223 /* Controllers */,
-				0F605A711DFF810400A99223 /* Storyboards */,
 				0F605A531DFF7FF800A99223 /* Assets.xcassets */,
+				0F605A881DFF954200A99223 /* CollectionViewRelated */,
+				0F605A6F1DFF80E300A99223 /* Controllers */,
+				0F605A871DFF901E00A99223 /* DataSources */,
+				0F605A701DFF80F700A99223 /* Delegates */,
 				0F605A581DFF7FF800A99223 /* Info.plist */,
+				0F605A861DFF8FFB00A99223 /* Model */,
+				0F605A7F1DFF8BA000A99223 /* Protocols */,
+				0F605A751DFF814900A99223 /* Resources */,
+				0F605A711DFF810400A99223 /* Storyboards */,
 			);
 			path = Nike;
 			sourceTree = "<group>";
@@ -120,8 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				0F605A6C1DFF808600A99223 /* ItemsViewController.swift */,
-				0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */,
-				0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -139,7 +147,6 @@
 			children = (
 				0F605A551DFF7FF800A99223 /* LaunchScreen.storyboard */,
 				0F605A501DFF7FF800A99223 /* Main.storyboard */,
-				0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -150,6 +157,39 @@
 				0F605A721DFF814300A99223 /* productList.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0F605A7F1DFF8BA000A99223 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */,
+				0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		0F605A861DFF8FFB00A99223 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F605A831DFF8CF000A99223 /* NikePhoto.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0F605A871DFF901E00A99223 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0F605A801DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		0F605A881DFF954200A99223 /* CollectionViewRelated */ = {
+			isa = PBXGroup;
+			children = (
+				0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */,
+			);
+			name = CollectionViewRelated;
 			sourceTree = "<group>";
 		};
 		5C6FF8E8A5E2478F7947C27E /* Pods */ = {
@@ -332,6 +372,8 @@
 				0F605A771DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
 				0F605A4D1DFF7FF800A99223 /* AppDelegate.swift in Sources */,
 				0F605A7D1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
+				0F605A841DFF8CF000A99223 /* NikePhoto.swift in Sources */,
+				0F605A811DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +386,8 @@
 				0F605A781DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
 				0F605A6E1DFF808600A99223 /* ItemsViewController.swift in Sources */,
 				0F605A7E1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
+				0F605A851DFF8CF000A99223 /* NikePhoto.swift in Sources */,
+				0F605A821DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

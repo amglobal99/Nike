@@ -50,22 +50,6 @@ extension JsonConvertible  {
         
         let urlRequest = URLRequest(url: url)
         
-        
-        /*
-         // Check for Internet Connection before sending Request
-         if Reachability.isConnectedToNetwork() == true {
-         print("Internet connection OK")
-         } else {
-         print("Internet connection FAILED")
-         showBanner(title: "No Connection", subtitle: "Please try again when Internet connection \n is available !!", image: nil, bkColor: UIColor.red)
-         return
-         
-         }
-         */
-        
-        
-        
-        
         // Send Alamofire request
         //Alamofire.request(urlRequest).responseJSON
         
@@ -122,16 +106,6 @@ extension JsonConvertible  {
                     }
                 }//if rootPath =  nil
         }  // end Alamofire request
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
     } // end function
     
