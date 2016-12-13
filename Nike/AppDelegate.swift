@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Nike
 //
-//  Created by Dad on 12/12/16.
+//  Created by Jack Patil on 12/12/16.
 //  Copyright © 2016 JP. All rights reserved.
 //
 
