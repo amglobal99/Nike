@@ -18,6 +18,10 @@
 		0F605A741DFF814300A99223 /* productList.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F605A721DFF814300A99223 /* productList.json */; };
 		0F605A771DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */; };
 		0F605A781DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */; };
+		0F605A7A1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */; };
+		0F605A7B1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */; };
+		0F605A7D1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */; };
+		0F605A7E1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */; };
 		9528C52D844F287A5976F72E /* Pods_Nike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EB66B6ED3B664F5224216F /* Pods_Nike.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,8 @@
 		0F605A6C1DFF808600A99223 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		0F605A721DFF814300A99223 /* productList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = productList.json; path = ../../../Downloads/productList.json; sourceTree = "<group>"; };
 		0F605A761DFF896B00A99223 /* NikePhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NikePhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolJsonConvertible.swift; sourceTree = "<group>"; };
+		0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolUtils.swift; sourceTree = "<group>"; };
 		14EB66B6ED3B664F5224216F /* Pods_Nike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EEC36A43BCBD8C98CC85D1 /* Pods-Nike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nike.release.xcconfig"; path = "Pods/Target Support Files/Pods-Nike/Pods-Nike.release.xcconfig"; sourceTree = "<group>"; };
 		9598F73264746090A09FE7FD /* Pods-Nike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Nike/Pods-Nike.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				0F605A6C1DFF808600A99223 /* ItemsViewController.swift */,
+				0F605A791DFF8A8700A99223 /* ProtocolJsonConvertible.swift */,
+				0F605A7C1DFF8ACB00A99223 /* ProtocolUtils.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -320,8 +328,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F605A6D1DFF808600A99223 /* ItemsViewController.swift in Sources */,
+				0F605A7A1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */,
 				0F605A771DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
 				0F605A4D1DFF7FF800A99223 /* AppDelegate.swift in Sources */,
+				0F605A7D1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F605A621DFF7FF800A99223 /* NikeTests.swift in Sources */,
+				0F605A7B1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */,
 				0F605A781DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
 				0F605A6E1DFF808600A99223 /* ItemsViewController.swift in Sources */,
+				0F605A7E1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
