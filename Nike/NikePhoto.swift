@@ -2,7 +2,7 @@
 //  NikePhoto.swift
 //  Nike
 //
-//  Created by Dad on 12/12/16.
+//  Created by Jack Patil on 12/12/16.
 //  Copyright © 2016 JP. All rights reserved.
 //
 
@@ -17,15 +17,17 @@ class NikePhoto {
     let name: String
     let price: String
     let color: String
-    let remoteURL: URL
+    let remoteURLThumb: URL
+    let remoteURLFull: URL
     var image: UIImage?
    
     
-    init(name: String, price: String, color:String, remoteURL: URL) {
+    init(name: String, price: String, color:String, remoteURLThumb: URL, remoteURLFull: URL) {
         self.name = name
         self.price = price
         self.color = color
-        self.remoteURL = remoteURL
+        self.remoteURLThumb = remoteURLThumb
+        self.remoteURLFull = remoteURLFull
         //self.image = image
     }
     

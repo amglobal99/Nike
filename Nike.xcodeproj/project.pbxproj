@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F24ABBC1E002EE8007E255A /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABBB1E002EE8007E255A /* PhotoStore.swift */; };
+		0F24ABBD1E002EE8007E255A /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABBB1E002EE8007E255A /* PhotoStore.swift */; };
+		0F24ABBF1E003540007E255A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABBE1E003540007E255A /* GlobalConstants.swift */; };
+		0F24ABC01E003540007E255A /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABBE1E003540007E255A /* GlobalConstants.swift */; };
+		0F24ABC21E005CB2007E255A /* ItemsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABC11E005CB2007E255A /* ItemsViewControllerTests.swift */; };
+		0F24ABC41E005D45007E255A /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F24ABC31E005D45007E255A /* BaseTestCase.swift */; };
 		0F605A4D1DFF7FF800A99223 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F605A4C1DFF7FF800A99223 /* AppDelegate.swift */; };
 		0F605A521DFF7FF800A99223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F605A501DFF7FF800A99223 /* Main.storyboard */; };
 		0F605A541DFF7FF800A99223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F605A531DFF7FF800A99223 /* Assets.xcassets */; };
@@ -40,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F24ABBB1E002EE8007E255A /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		0F24ABBE1E003540007E255A /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		0F24ABC11E005CB2007E255A /* ItemsViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewControllerTests.swift; sourceTree = "<group>"; };
+		0F24ABC31E005D45007E255A /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		0F605A491DFF7FF800A99223 /* Nike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F605A4C1DFF7FF800A99223 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F605A511DFF7FF800A99223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				0F605A611DFF7FF800A99223 /* NikeTests.swift */,
+				0F24ABC11E005CB2007E255A /* ItemsViewControllerTests.swift */,
+				0F24ABC31E005D45007E255A /* BaseTestCase.swift */,
 				0F605A631DFF7FF800A99223 /* Info.plist */,
 			);
 			path = NikeTests;
@@ -130,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				0F605A6C1DFF808600A99223 /* ItemsViewController.swift */,
+				0F24ABBB1E002EE8007E255A /* PhotoStore.swift */,
+				0F24ABBE1E003540007E255A /* GlobalConstants.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -368,7 +382,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F605A6D1DFF808600A99223 /* ItemsViewController.swift in Sources */,
+				0F24ABBF1E003540007E255A /* GlobalConstants.swift in Sources */,
 				0F605A7A1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */,
+				0F24ABBC1E002EE8007E255A /* PhotoStore.swift in Sources */,
 				0F605A771DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
 				0F605A4D1DFF7FF800A99223 /* AppDelegate.swift in Sources */,
 				0F605A7D1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
@@ -382,9 +398,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F605A621DFF7FF800A99223 /* NikeTests.swift in Sources */,
+				0F24ABC01E003540007E255A /* GlobalConstants.swift in Sources */,
 				0F605A7B1DFF8A8700A99223 /* ProtocolJsonConvertible.swift in Sources */,
+				0F24ABBD1E002EE8007E255A /* PhotoStore.swift in Sources */,
 				0F605A781DFF896B00A99223 /* NikePhotoCollectionViewCell.swift in Sources */,
+				0F24ABC21E005CB2007E255A /* ItemsViewControllerTests.swift in Sources */,
 				0F605A6E1DFF808600A99223 /* ItemsViewController.swift in Sources */,
+				0F24ABC41E005D45007E255A /* BaseTestCase.swift in Sources */,
 				0F605A7E1DFF8ACB00A99223 /* ProtocolUtils.swift in Sources */,
 				0F605A851DFF8CF000A99223 /* NikePhoto.swift in Sources */,
 				0F605A821DFF8C3B00A99223 /* NIkePhotoCollectionViewDataSource.swift in Sources */,
@@ -439,6 +459,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -489,6 +510,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -518,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9598F73264746090A09FE7FD /* Pods-Nike.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = Nike/Info.plist;
@@ -532,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84EEC36A43BCBD8C98CC85D1 /* Pods-Nike.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YEPB2Q5VF6;
 				INFOPLIST_FILE = Nike/Info.plist;

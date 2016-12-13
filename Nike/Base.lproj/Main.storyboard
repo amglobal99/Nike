@@ -10,7 +10,7 @@
         <!--Items View Controller-->
         <scene sceneID="4xt-tj-2ZH">
             <objects>
-                <collectionViewController storyboardIdentifier="NikePhotos" id="9fi-RI-gnf" customClass="ItemsViewController" customModule="Nike" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="NikePhotos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9fi-RI-gnf" customClass="ItemsViewController" customModule="Nike" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="5CD-YY-9o2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
